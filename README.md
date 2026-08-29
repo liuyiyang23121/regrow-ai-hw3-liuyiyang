@@ -2,6 +2,8 @@
 
 作业 3｜刘懿洋
 
+公开源码：https://github.com/liuyiyang23121/regrow-ai-hw3-liuyiyang
+
 ## 老师如何查看
 
 请先双击根目录里的 `ReGrow-AI-作业3-双击打开.html`。页面会直接在浏览器里打开，不需要安装 Python、Node.js，也不需要访问 `127.0.0.1`。这个版本可以查看界面和主要交互，适合快速验收。
