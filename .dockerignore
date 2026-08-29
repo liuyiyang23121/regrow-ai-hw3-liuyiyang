@@ -1,0 +1,15 @@
+backend/.venv
+backend/.pytest_cache
+backend/**/__pycache__
+backend/**/*.pyc
+frontend/node_modules
+frontend/node_modules.incomplete
+frontend/dist
+frontend/.vite
+**/.DS_Store
+**/.vscode
+**/* copy.*
+**/*incomplete*
+design
+*.zip
+ReGrow-AI-作业3-双击打开.html
