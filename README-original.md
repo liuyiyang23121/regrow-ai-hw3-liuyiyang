@@ -1,19 +1,7 @@
-## 运行
+# ReGrow AI 历史说明
 
-任务描述
-```plaintext
-在某电商/本地生活大厂中，以往搞一次营销活动需要：活动 PM 写方案、数据分析师（DA）跑 SQL、文案策划写多组 AB 测试文案、策略产品配置分发路由。 本场景将这一流程彻底 Agent 矩阵化：输入一个模糊的业务目标（例如：“下季度针对高流失高客单价用户，提升 5% 的复购率”），系统自主启动，多智能体协同完成：自主写 SQL 取数 -> 动态注册/调用数据清理工具 -> 模拟对抗生成高转化文案 -> 工作流自优化重试 -> 自动化测试与护栏拦截。
-```
+这份文件保留早期原型的记录。项目已经改成前后端一体启动，旧的 `localhost:5173` 方式不再作为提交说明。
 
+请阅读同目录下的 `README.md`。快速查看时双击 `ReGrow-AI-作业3-双击打开.html`；检查完整 FastAPI、SQLite 和 SQL 自动修复时，运行 `启动作业.bat`。
 
- 后台
-
- cd backend
- ./run.sh
-前台
- cd frontend
-#第一次 npm install
- npm run dev
-浏览器
- http://localhost:5173
-
+公开源码：https://github.com/liuyiyang23121/regrow-ai-hw3-liuyiyang
