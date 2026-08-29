@@ -2,15 +2,17 @@
 
 作业 3｜刘懿洋
 
-公开源码：https://github.com/liuyiyang23121/regrow-ai-hw3-liuyiyang
-
 ## 老师如何查看
 
-请先双击根目录里的 `ReGrow-AI-作业3-双击打开.html`。页面会直接在浏览器里打开，不需要安装 Python、Node.js，也不需要访问 `127.0.0.1`。这个版本可以查看界面和主要交互，适合快速验收。
+完整项目已上传至公开 GitHub 仓库：
 
-如果需要检查 FastAPI、SQLite 和 SQL 自动修复，请再双击 `启动作业.bat`。脚本启动完成后，会在当前电脑打开完整版本。第一次运行如果缺少依赖，准备时间会稍长一些。
+https://github.com/liuyiyang23121/regrow-ai-hw3-liuyiyang
 
-本次提交没有公网地址。README 中出现的 `http://127.0.0.1:8000` 只是完整版本启动后的本机入口，不是交给老师点击的链接。提交时请发送整个 `HW3-刘懿洋-提交版.zip`。
+老师可以直接在线查看全部源码，包括 Vue 前端、FastAPI 后端、SQLite 数据库结构、SQL 沙盒、自动修复逻辑、护栏规则、测试用例和部署配置，也可以从仓库下载完整项目。
+
+如果只想快速体验页面和主要交互，下载仓库或提交压缩包后，双击根目录里的 `ReGrow-AI-作业3-双击打开.html` 即可，不需要安装 Python、Node.js，也不需要启动服务。
+
+GitHub 用于在线查看和下载源码，并不是已经运行的网页服务。离线 HTML 适合快速验收；如需实际执行 FastAPI、SQLite 和 SQL 自动修复，请下载项目后按“运行项目”部分启动完整版本。目前没有单独的云端 FastAPI 服务。
 
 ## 提交内容
 
@@ -83,7 +85,7 @@ FastAPI Orchestrator
 4. 浏览器自动打开后即可演示；命令窗口需要保持打开。
 5. 演示结束后，在命令窗口按 `Ctrl+C` 停止服务。
 
-如果浏览器没有自动打开，手动访问 [http://127.0.0.1:8000](http://127.0.0.1:8000)。
+如果浏览器没有自动打开，请查看命令窗口中显示的本机地址。
 
 ### 开发模式
 
@@ -93,7 +95,7 @@ FastAPI Orchestrator
 cd backend
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8000
+.\.venv\Scripts\python.exe -m uvicorn app.main:app --port 8000
 ```
 
 另开一个终端：
@@ -101,10 +103,10 @@ python -m venv .venv
 ```powershell
 cd frontend
 npm install
-npm run dev -- --host 127.0.0.1 --port 5173
+npm run dev
 ```
 
-开发模式访问 [http://127.0.0.1:5173](http://127.0.0.1:5173)，Vite 会把 `/api` 请求转发到 FastAPI。
+终端会显示前端开发地址，Vite 会把 `/api` 请求转发到 FastAPI。
 
 ## 使用 Agno 模型
 
